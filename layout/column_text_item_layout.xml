@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clColumnTextItem"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:paddingVertical="4dp">
+
+    <TextView
+        android:id="@+id/tvTitleColumnTextItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:padding="4dp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSubTitleColumnTextItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:textColor="#97a1ae"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleColumnTextItem" />
+
+    <TextView
+        android:id="@+id/tvStockC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/rounded_background"
+        android:backgroundTint="#F2eeeb"
+        android:paddingHorizontal="4dp"
+        android:text="C"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@id/tvSubTitleColumnTextItem"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleColumnTextItem" />
+
+    <TextView
+        android:id="@+id/tvStockM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/rounded_background"
+        android:backgroundTint="#F2eeeb"
+        android:paddingHorizontal="4dp"
+        android:text="M"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@id/tvStockC"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleColumnTextItem" />
+
+    <TextView
+        android:id="@+id/tvStockCD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/rounded_background"
+        android:backgroundTint="#F2eeeb"
+        android:paddingHorizontal="4dp"
+        android:text="CD"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@id/tvStockM"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleColumnTextItem" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/clColumnTextValueChange"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingVertical="4dp"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/tvTitleColumnTextValueChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:maxLines="1"
+        android:textColor="@color/black"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivValueChange"
+        android:padding="4dp"
+        app:layout_constraintLeft_toRightOf="@id/tvTitleColumnTextValueChange"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tvSubTitleColumnTextValueChange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:textColor="#97a1ae"
+        android:maxLines="1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitleColumnTextValueChange" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
